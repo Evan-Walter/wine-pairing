@@ -53,7 +53,7 @@ searchForm.addEventListener("submit", function (e) {
   // Check for invalid/valid search terms
   if (res.status === "failure") {
     var failMsg = document.createElement("h4");
-    failMsg.innerHTML = res.message.replace(textValue, `"${textValue}"`);
+    failMsg.innerHTML = res.message.replace(textValue, `"${textValue}"`); // add quotes around search term in result
     searchResultsContainer.appendChild(failMsg);
   } else {
     // Paired Wines Result
@@ -91,7 +91,9 @@ searchForm.addEventListener("submit", function (e) {
             roundHelper(productMatches.averageRating)
           )}</p>
           <p>Number of Ratings: ${stringHelper(productMatches.ratingCount)}</p>
-          <a href=${stringHelper(productMatches.link)}>Product Link</a>
+          <a href=${stringHelper(
+            productMatches.link
+          )} target=_blank>Product Link</a>
         `;
     searchResultsContainer.appendChild(productMatchesEl);
   }

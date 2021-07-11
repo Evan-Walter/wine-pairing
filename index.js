@@ -1,3 +1,6 @@
+//------------------------------------------------------------------------------
+// Variables for development without api requests
+//------------------------------------------------------------------------------
 var resExample = {
   pairedWines: ["merlot", "cabernet sauvignon", "pinot noir"],
   pairingText:
@@ -18,15 +21,14 @@ var resExample = {
   ],
 };
 
-var failureExample = {
+/* var failureExample = {
   status: "failure",
   message: "Could not find a wine pairing for seak",
-};
+}; */
 
-var searchResultsContainer = document.getElementsByClassName(
-  "search-results-container"
-)[0];
-
+//------------------------------------------------------------------------------
+// Search Form Event Listener
+//------------------------------------------------------------------------------
 var searchForm = document.querySelector("#search-form");
 
 searchForm.addEventListener("submit", function (e) {
@@ -41,9 +43,14 @@ searchForm.addEventListener("submit", function (e) {
       console.log(res); */
   var res = resExample; // for development without api requests
 
+  var searchResultsContainer = document.getElementsByClassName(
+    "search-results-container"
+  )[0];
+
   // Refresh results
   searchResultsContainer.innerHTML = "";
 
+  // Check for invalid/valid search terms
   if (res.status === "failure") {
     var failMsg = document.createElement("h4");
     failMsg.innerHTML = res.message.replace(textValue, `"${textValue}"`);
@@ -99,7 +106,9 @@ searchForm.addEventListener("submit", function (e) {
   xhttp.send(); */
 });
 
-// Helper functions
+//------------------------------------------------------------------------------
+// Helpers
+//------------------------------------------------------------------------------
 // Capitalize each word
 function titleize(str) {
   return str.replace(/\w\S*/g, function (txt) {

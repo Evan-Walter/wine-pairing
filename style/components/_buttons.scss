@@ -1,0 +1,20 @@
+.button {
+  // font-size: 1.5rem;
+
+  &-primary {
+    background: $primary-color;
+    color: $white-color;
+    width: 5rem;
+
+    &:hover {
+      cursor: pointer;
+      // color: $secondary-color;
+      background: $button-primary-hover;
+    }
+
+    &-secondary {
+      background: $secondary-color;
+      color: $primary-color;
+    }
+  }
+}

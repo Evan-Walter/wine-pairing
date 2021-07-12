@@ -1,0 +1,23 @@
+#explore {
+  // background: $primary-color;
+  // color: $white-color;
+  // margin: 0;
+
+  form {
+    display: flex;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}

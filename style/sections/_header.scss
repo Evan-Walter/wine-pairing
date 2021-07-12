@@ -1,3 +1,12 @@
+.header-item > a {
+  padding: 20px;
+  margin: 0;
+}
+
+a:hover {
+  color: $silver-color;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -7,10 +16,9 @@
 }
 
 .logo {
-  background-image: url(images/);
+  background-image: url(/images/favicon-32x32.png);
 }
 
 .header-item {
-  padding: 10px;
-  margin: 10px;
+  
 }

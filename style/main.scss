@@ -1,10 +1,13 @@
+// @import "./fontawesome/scss/fontawesome.scss";
 @import "./abstracts/variables";
 
 @import "./base/base";
 @import "./base/typography";
 
-@import "./sections/header";
-@import "./sections/search-hero";
-@import "./sections/search-results";
+@import "./components/buttons";
 
+@import "./sections/header";
+@import "./sections/explore";
+
+@import "./layout/categories";
 @import "./layout/footer";

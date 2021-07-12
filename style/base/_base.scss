@@ -1,4 +1,21 @@
 body,
 input {
   font-family: $font-family;
+  color: $black-color;
+  background: $white-color;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+}
+
+input {
+  border: 1px solid $silver-color;
+  border-radius: 4px;
+  outline: none;
+}
+
+a,
+a:visited {
+  color: $black-color;
+  text-decoration: none;
 }

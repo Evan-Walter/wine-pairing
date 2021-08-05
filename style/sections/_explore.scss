@@ -1,15 +1,18 @@
 #explore {
-  // background: $primary-color;
-  // color: $white-color;
-  // margin: 0;
-
   form {
     display: flex;
+    border: none;
   }
 
-  .search-bar {
-    width: 90%;
+  #search-bar {
+    color: $black-color;
+    background: $white-color;
     font-size: 1rem;
+    width: 100%;
+    border: 1px solid $silver-color;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
   }
 
   a {

@@ -1,14 +1,13 @@
 .button {
-  // font-size: 1.5rem;
-
   &-primary {
     background: $primary-color;
     color: $white-color;
     width: 5rem;
+    border-color: $primary-color;
 
     &:hover {
       cursor: pointer;
-      // color: $secondary-color;
+      border-color: $button-primary-hover;
       background: $button-primary-hover;
     }
 

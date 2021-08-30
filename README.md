@@ -6,7 +6,7 @@ To run this project, visit the following link.
 
 - [Wine Pairing App](https://evan-walter.github.io/wine-pairing)
 
-For more information on this project, please see the links below ↓↓↓
+For more information on this project, please see the links below.
 
 ## Getting Started
 

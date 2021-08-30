@@ -15,7 +15,7 @@ This project incorporates data retrieved from the following api.
 - [Spoonacular](https://spoonacular.com/)
 - [Spoonacular - Full Api Reference Documentation](https://spoonacular.com/food-api/docs)
 
-For help getting started with Web Development, including HTML, CSS, and JavaScript, visit
+To get started with Web Development, including HTML, CSS, and JavaScript, visit
 
 - [W3Schools](https://www.w3schools.com/)
 - [Mozilla Development Network](https://developer.mozilla.org/)
